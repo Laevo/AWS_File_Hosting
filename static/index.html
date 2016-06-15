@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<body>
+	<title>Assignment 3</title>
+
+	<h1>Upload File</h1>
+	<form action="/upload"
+	enctype="multipart/form-data" method="post">
+	<p>
+		Please select a file:<br>
+		<input type="file" name="file" size="40">
+	</p>
+	<div>
+		<input type="submit" value="Upload">
+	</div>
+	</form>
+
+	<br />
+
+	<h1>List Files</h1>
+	<form action="/list"
+	enctype="multipart/form-data" method="post">
+	<div>
+		<input type="submit" value="List Files">
+	</div>
+	</form>
+
+	<br />
+
+	<h1>Delete File</h1>
+    <form action="/delete" method="post" enctype="multipart/form-data">
+      <p>Filename: <input type="text" name="filename"></p>
+        <p> <input type="submit" value="Delete"> </p>
+    </form>
+
+    <br/>
+
+	<h1>Download File</h1>
+    <form action="/download" method="post" enctype="multipart/form-data">
+      <p>Filename: <input type="text" name="filename"></p>
+        <p> <input type="submit" value="Download"> </p>
+    </form>
+
+    <br/>
+
+    <h1>Purge Files</h1>
+    <form action="/purge" method="post" enctype="multipart/form-data">
+      <p>Purge Time(hrs): <input type="text" name="purgetime"></p>
+        <p> <input type="submit" value="Purge"> </p>
+    </form>
+
+</body>
+</html>
